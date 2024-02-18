@@ -16,6 +16,9 @@ Deploy your project to Vercel using GitHub Actions. Supports PR previews and Git
 
 ## 🚀 Features
 
+Fixed and improved version of [deploy-to-vercel-action](https://github.com/BetaHuhn/deploy-to-vercel-action) with the following features:
+- Vercel branch name is now the same as the GitHub branch name
+
 - Use GitHub Actions events to control when to deploy to Vercel
 - Automatically deploy every pull request
 - Comment on pull requests with a preview link
