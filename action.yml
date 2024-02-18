@@ -1,0 +1,107 @@
+name: 'Deploy to Vercel Action'
+description: 'Deploy your project to Vercel using GitHub Actions. Supports PR previews and GitHub deployments.'
+author: 'BetaHuhn'
+
+inputs:
+  GITHUB_TOKEN:
+    description: |
+      GitHub Token which will be used to authenticate with the GitHub API.
+    required: false
+  VERCEL_TOKEN:
+    description: |
+      Vercel Token which will be used with the Vercel CLI.
+    required: false
+  VERCEL_PROJECT_ID:
+    description: |
+      Id of your Vercel project (can be found in .vercel/project.json).
+    required: false
+  VERCEL_ORG_ID:
+    description: |
+      Id of your Vercel organisation (can be found in .vercel/project.json).
+    required: false
+  PRODUCTION:
+    description: |
+      Create a production deployment (default: true, false for PR deployments).
+    required: false
+  PREBUILT:
+    description: |
+      Deploy a prebuilt Vercel Project (default: false).
+    required: false
+  GITHUB_DEPLOYMENT:
+    description: |
+      Create a deployment on GitHub (default: true).
+    required: false
+  CREATE_COMMENT:
+    description: |
+      Create PR comment when deploying (default: true).
+    required: false
+  DELETE_EXISTING_COMMENT:
+    description: |
+      Delete existing PR comment when redeploying PR (default: true).
+    required: false
+  ATTACH_COMMIT_METADATA:
+    description: |
+      Attach metadata about the commit to the Vercel deployment (default: true).
+    required: false
+  DEPLOY_PR_FROM_FORK:
+    description: |
+      Allow PRs which originate from a fork to be deployed (default: false).
+    required: false
+  PR_LABELS:
+    description: |
+      Labels which will be added to the pull request once deployed. Set it to false to turn off (default: deployed).
+    required: false
+  ALIAS_DOMAINS:
+    description: |
+      Assign alias domain(s) to the deployment.
+    required: false
+  PR_PREVIEW_DOMAIN:
+    description: |
+      Assign a custom domain to the PR preview deployment.
+    required: false
+  VERCEL_SCOPE:
+    description: |
+      Execute commands from a different Vercel team or user.
+    required: false
+  GITHUB_DEPLOYMENT_ENV:
+    description: |
+      Custom environment for GitHub deployment.
+    required: false
+  TRIM_COMMIT_MESSAGE:
+    description: |
+      When passing meta data to Vercel deployment, trim the commit message to subject only (default: false).
+    required: false
+  BUILD_ENV:
+    description: |
+      Provide environment variables to the build step.
+    required: false
+  WORKING_DIRECTORY:
+    description: |
+      Working directory for the Vercel CLI.
+    required: false
+  FORCE:
+    description: |
+      Used to skip the build cache.
+    required: false
+
+outputs:
+  PREVIEW_URL:
+    description: 'Main deployment preview URL.'
+  DEPLOYMENT_URLS:
+    description: 'All assigned deployment URLs.'
+  DEPLOYMENT_CREATED:
+    description: 'True if a Vercel deployment was created.'
+  COMMENT_CREATED:
+    description: 'True if a comment was created on the PR or commit.'
+  DEPLOYMENT_INSPECTOR_URL:
+    description: 'Main deployment inspection url.'
+  DEPLOYMENT_UNIQUE_URL:
+    description: 'The unique deployment url on Vercel'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'triangle'
+  color: 'white'

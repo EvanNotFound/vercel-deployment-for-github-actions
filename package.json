@@ -1,0 +1,37 @@
+{
+  "name": "deploy-to-vercel-action",
+  "version": "1.9.12",
+  "description": "Deploy your project to Vercel using GitHub Actions. Supports PR previews and GitHub deployments.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "dev": "node src/index.js",
+    "start": "node dist/index.js",
+    "build": "ncc build src/index.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betahuhn/deploy-to-vercel-action.git"
+  },
+  "keywords": [],
+  "author": "Maximilian Schiller <schiller@mxis.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betahuhn/deploy-to-vercel-action/issues"
+  },
+  "homepage": "https://github.com/marketplace/actions/deploy-to-vercel-action",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^4.0.0",
+    "action-input-parser": "^1.2.38",
+    "dotenv": "^9.0.2",
+    "got": "^11.8.3",
+    "vercel": "^22.0.1"
+  },
+  "devDependencies": {
+    "@betahuhn/config": "^1.2.0",
+    "@vercel/ncc": "^0.36.1",
+    "eslint": "^7.32.0"
+  }
+}
