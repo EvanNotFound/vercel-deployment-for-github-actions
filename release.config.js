@@ -1,1 +1,6 @@
-module.exports = require('@betahuhn/config').releaseMaster
+const defaultConfig = require('@betahuhn/config').releaseMaster
+
+module.exports = {
+	...defaultConfig,
+	branches: [ 'main' ]
+}
