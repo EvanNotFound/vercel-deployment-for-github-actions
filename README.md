@@ -204,7 +204,7 @@ jobs:
           repository: ${{ steps.script.outputs.repo }}
 
       - name: Deploy to Vercel Action
-        uses: EvanNotFound/vercel-deployment-for-github-actions@develop
+        uses: EvanNotFound/vercel-deployment-for-github-actions@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
