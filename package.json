@@ -9,6 +9,7 @@
     "start": "node dist/index.js",
     "build": "ncc build src/index.js -o dist"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/betahuhn/deploy-to-vercel-action.git"
