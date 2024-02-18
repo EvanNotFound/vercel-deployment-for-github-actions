@@ -12,7 +12,7 @@ Deploy your project to Vercel using GitHub Actions. Supports PR previews and Git
 
 ## 👋 Introduction
 
-[deploy-to-vercel-action](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) uses GitHub Actions to deploy your project/site to [Vercel](https://vercel.com). It offers more customization than Vercel's GitHub integration in terms of when to deploy your site. Using GitHub Actions [Events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) you can choose to deploy every commit, only on new releases or even on a cron schedule. The Action can also deploy every PR and comment on it with a custom preview url. It uses the Vercel CLI and can automatically create a Deployment on GitHub as well.
+[vercel-deployment-for-github-actions](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) uses GitHub Actions to deploy your project/site to [Vercel](https://vercel.com). It offers more customization than Vercel's GitHub integration in terms of when to deploy your site. Using GitHub Actions [Events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) you can choose to deploy every commit, only on new releases or even on a cron schedule. The Action can also deploy every PR and comment on it with a custom preview url. It uses the Vercel CLI and can automatically create a Deployment on GitHub as well.
 
 ## 🚀 Features
 
@@ -75,7 +75,7 @@ With the `v1` tag you will always get the latest non-breaking version which will
 
 ## ⚙️ Action Inputs
 
-Here are all the inputs [deploy-to-vercel-action](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) takes:
+Here are all the inputs [vercel-deployment-for-github-actions](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) takes:
 
 | Key | Value | Required | Default |
 | ------------- | ------------- | ------------- | ------------- |
@@ -221,7 +221,7 @@ Here are a few examples to help you get started!
 
 ### Basic Example
 
-The workflow below will run on every push to master and every time a new PR is created or an existing PR changed. [deploy-to-vercel-action](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) will deploy the master branch to your Vercel production environment and comment on every PR with a preview link to the deployed PR.
+The workflow below will run on every push to master and every time a new PR is created or an existing PR changed. [vercel-deployment-for-github-actions](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) will deploy the master branch to your Vercel production environment and comment on every PR with a preview link to the deployed PR.
 
 **.github/workflows/deploy.yml**
 
@@ -305,7 +305,7 @@ jobs:
 
 ### Assign alias domains
 
-If you want, [deploy-to-vercel-action](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) can assign multiple domains to each deployment and also change the PR preview domain:
+If you want, [vercel-deployment-for-github-actions](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) can assign multiple domains to each deployment and also change the PR preview domain:
 
 **.github/workflows/deploy.yml**
 
@@ -536,20 +536,16 @@ The actual source code of this Action is in the `src` folder.
 
 - run `yarn lint` or `npm run lint` to run eslint.
 - run `yarn start` or `npm run start` to run the Action locally.
-- run `yarn build` or `npm run build` to produce a production version of [deploy-to-vercel-action](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) in the `dist` folder.
+- run `yarn build` or `npm run build` to produce a production version of [vercel-deployment-for-github-actions](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) in the `dist` folder.
 
 ## ❔ About
 
-This project was developed by me ([@betahuhn](https://github.com/BetaHuhn)) in my free time. If you want to support me:
+This project was originally written by ([@betahuhn](https://github.com/BetaHuhn)). I took over the project to fix some issues and add new features.
 
-[![Donate via PayPal](https://img.shields.io/badge/paypal-donate-009cde.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=394RTSBEEEFEE)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F81S2RK)
-
-**[deploy-to-vercel-action](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) is in no way affiliated with Vercel.**
+**[vercel-deployment-for-github-actions](https://github.com/EvanNotFound/vercel-deployment-for-github-actions) is in no way affiliated with Vercel.**
 
 ## 📄 License
 
-Copyright 2021 Maximilian Schiller
+Copyright 2024 Evan Luo
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
