@@ -1,8 +1,8 @@
 <div align="center">
 
-# Deploy to Vercel Action
+# Vercel Deployment for GitHub Actions
 
-[![Node CI](https://github.com/BetaHuhn/deploy-to-vercel-action/workflows/Node%20CI/badge.svg)](https://github.com/BetaHuhn/deploy-to-vercel-action/actions?query=workflow%3A%22Node+CI%22) [![Release CI](https://github.com/BetaHuhn/deploy-to-vercel-action/workflows/Release%20CI/badge.svg)](https://github.com/BetaHuhn/deploy-to-vercel-action/actions?query=workflow%3A%22Release+CI%22) [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/deploy-to-vercel-action/blob/master/LICENSE) ![David](https://img.shields.io/david/betahuhn/deploy-to-vercel-action)
+[![Node CI](https://github.com/EvanNotFound/vercel-deployment-for-github-actions/workflows/Node%20CI/badge.svg)](https://github.com/EvanNotFound/vercel-deployment-for-github-actions/actions?query=workflow%3A%22Node+CI%22) [![Release CI](https://github.com/EvanNotFound/vercel-deployment-for-github-actions/workflows/Release%20CI/badge.svg)](https://github.com/EvanNotFound/vercel-deployment-for-github-actions/actions?query=workflow%3A%22Release+CI%22) [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/EvanNotFound/vercel-deployment-for-github-actions/blob/master/LICENSE) 
 
 Deploy your project to Vercel using GitHub Actions. Supports PR previews and GitHub deployments.
 
